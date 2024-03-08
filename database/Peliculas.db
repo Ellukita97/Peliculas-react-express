@@ -1,0 +1,67 @@
+create database Peliculas
+
+CREATE TABLE Peliculas (
+    idPelicula BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    PeliculaUrlImagen MEDIUMTEXT not null,
+    PeliculaUrlPortada MEDIUMTEXT,
+    nombre VARCHAR(150) not null,
+    Sinopsis VARCHAR(100) not null,
+    Clasificaccion int not null
+);
+
+CREATE TABLE Generos (
+    idGenero BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    nombreGenero VARCHAR(150) not null unique
+);
+
+CREATE TABLE Usuarios (
+    idUsuario BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    nombreUsuario VARCHAR(150) not null unique,
+    EmailUsuario VARCHAR(100) not null unique,
+    PasswordUsuario VARCHAR(100) not null,
+    FechaRegistroUsuario DATE not null,
+    FechaNacimiento DATE not null,
+    Tel varchar(30),
+    Rol varchar(30) not null
+);
+
+CREATE TABLE Proyecciones (
+    idProyeccion BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    idPelicula BIGINT UNSIGNED,
+    FechaHoraProyeccion DATETIME not null,
+    MontoProyeccion int not null,
+    FOREIGN KEY(idPelicula) REFERENCES Peliculas(idPelicula)
+);
+
+CREATE TABLE Salas (
+    idSala BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    CantTotalAsientosSala int not null
+);
+
+CREATE TABLE GeneroPelicula (
+    id BIGINT UNSIGNED AUTO_INCREMENT,
+    idGenero BIGINT UNSIGNED not null,
+    idPelicula BIGINT UNSIGNED not null,
+    PRIMARY KEY (id),
+    FOREIGN KEY (idGenero) REFERENCES Generos (idGenero),
+    FOREIGN KEY (idPelicula) REFERENCES Peliculas (idPelicula)
+);
+
+CREATE TABLE ProyeccionSala (
+    id BIGINT UNSIGNED AUTO_INCREMENT,
+    idSala BIGINT UNSIGNED not null,
+    idProyeccion BIGINT UNSIGNED not null,
+    PRIMARY KEY (id),
+    FOREIGN KEY (idSala) REFERENCES Salas (idSala),
+    FOREIGN KEY (idProyeccion) REFERENCES Proyecciones (idProyeccion)
+);
+
+CREATE TABLE BoletoCompra (
+    idBoleto BIGINT UNSIGNED AUTO_INCREMENT,
+    idProyeccion BIGINT UNSIGNED not null,
+    idUsuario BIGINT UNSIGNED not null,
+    AsientoBoleto int not null,
+    PRIMARY KEY (idBoleto),
+    FOREIGN KEY (idProyeccion) REFERENCES Proyecciones (idProyeccion),
+    FOREIGN KEY (idUsuario) REFERENCES Usuarios (idUsuario)
+);
