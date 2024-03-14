@@ -1,0 +1,7 @@
+.signUp_button {
+    background: none;
+}
+
+.signUp_button:hover {
+    background-color: rgba(0, 0, 0, 0.259);
+}

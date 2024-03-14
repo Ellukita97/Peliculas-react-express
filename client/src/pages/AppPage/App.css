@@ -1,0 +1,65 @@
+.background-container_home{
+    padding: 10px 0px 0px 0px;
+    background-color: rgba(1, 15, 37, 0.693);
+    min-height: 100vh;
+}
+
+.container_home{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 0 10px;
+}
+
+.info-container_home{
+    width: 450px;
+}
+
+.generes-container_home{
+    display: flex;
+    gap: 15px;
+}
+
+.Movie-info_home h2{
+    color: white;
+    font-size: 70px;
+    font-weight: 400;
+    margin: 0 0 10px 0;
+}
+.Movie-info_home p{
+    font-size: 18px;
+    color: rgb(179, 179, 179);
+}
+
+.button-container_home{
+    display: flex;
+    gap: 20px;
+}
+
+.img-portada_home{
+    height: 500px;
+}
+
+.container-img-banner_home{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px 0 100px 0;
+    background: rgb(2,6,24);
+    background: linear-gradient(0deg, rgba(2,6,24,1) 17%, rgba(0,9,30,0) 100%);
+}
+
+.titleNewMovies{
+    color: rgb(179, 179, 179);
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+.img-banner_home{
+    opacity: .7;
+    height: 200px;
+    width: 200px;
+}

@@ -1,0 +1,30 @@
+.container-header_nav {
+    background-color: rgba(1, 15, 37, 0.693);
+    padding: 10px;
+}
+
+.container_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0px auto;
+    color: white;
+}
+
+.Logo {
+    margin: 0;
+}
+
+.container-pagination_nav {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.container-user_nav {
+    display: flex;
+    gap: 20px;
+}

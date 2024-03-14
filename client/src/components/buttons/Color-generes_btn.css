@@ -1,0 +1,15 @@
+.buttonColor{
+    color: white;
+    border-radius: 2px;
+    padding: 5px 10px;
+}
+
+.orange{
+    background-color: red;
+}
+.yellow{
+    background-color: #eda703;
+}
+.blue{
+    background-color: rgb(0, 140, 255);
+}

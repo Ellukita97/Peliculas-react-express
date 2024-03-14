@@ -1,0 +1,24 @@
+.input-search {
+    display: flex;
+    height: 50px;
+    border-bottom: 2px solid red;
+    border-radius: 0;
+    color: red;
+}
+
+.input-search input {
+    background: none;
+    padding: 0;
+    margin: 0;
+}
+
+.input-search input::placeholder {
+    color: red;
+}
+
+.input-search button {
+    background: none;
+    width: 20px;
+    padding: 0;
+    margin: 0;
+}
