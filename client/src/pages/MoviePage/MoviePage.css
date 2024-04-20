@@ -1,0 +1,109 @@
+.container_page-movie {
+    min-height: 100vh;
+    background-color: rgba(2, 6, 24, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.container_movie {
+    display: flex;
+}
+
+.div1_movie {
+    display: flex;
+    gap: 30px;
+    border-right: 1px solid #5e6369;
+    padding-right: 5px;
+}
+
+.img-portada_home {
+    height: 500px;
+}
+
+.Generes_movie {
+    display: flex;
+    gap: 10px;
+}
+
+.Movie-info_home-moviePage {
+    max-width: 500px;
+    height: 537px;
+    padding-right: 10px;
+    overflow-y: scroll;
+}
+
+.Movie-info_home-moviePage::-webkit-scrollbar {
+    width: 10px;
+}
+
+.Movie-info_home-moviePage::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.Movie-info_home-moviePage::-webkit-scrollbar-thumb {
+    background-color: #16202a;
+    border-radius: 20px;
+    border: 3px solid #304355;
+}
+
+.Movie-info_home-moviePage h2 {
+    color: white;
+    font-size: 70px;
+    font-weight: 400;
+    margin: 0 0 10px 0;
+}
+
+.Movie-info_home-moviePage p {
+    font-size: 18px;
+    color: rgb(179, 179, 179);
+}
+
+.div2_movie {
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/*Card Description styles*/
+.container_Description-Card {
+    display: flex;
+}
+
+.Image_movie {
+    height: 100px;
+    width: 100px;
+    background-size: cover;
+    background-position: center;
+}
+
+.info_Description-Card h4 {
+    font-size: 20px;
+    margin: 0;
+    display: inline-block;
+}
+
+.info_Description-Card p {
+    width: 250px;
+    margin: 0;
+    font-size: 15px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.info_Description-Card button{
+    color:#6371a1;
+    padding: 3px;
+}
+
+/*Video Styles*/
+.video{
+    width: 1000px;
+    height: 600px;
+    margin: 50px;
+}

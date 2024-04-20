@@ -1,0 +1,146 @@
+.desactive_popup{
+    display: flex !important;
+}
+
+
+
+.container_darkScreem-LoginRegistrer {
+    background-color: rgba(0, 0, 0, 0.383);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    display: none;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    z-index: 300;
+}
+
+.container_LoginRegistrer {
+    background-color: #161717;
+    border-radius: 30px;
+    display: flex;
+    width: 1000px;
+    height: 700px;
+}
+
+.div1_LoginRegistrer {
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Sala_de_cine.jpg/1200px-Sala_de_cine.jpg');
+    padding: 0 40px;
+    box-sizing: border-box;
+
+
+}
+
+.div1_LoginRegistrer h3 {
+    color: #fff;
+    font-size: 30px;
+}
+
+.container-subtitle_div1-LoginRegistrer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 70%;
+}
+
+.container-subtitle_div1-LoginRegistrer h4 {
+    margin: 0;
+    font-size: 50px;
+}
+
+.container-subtitle_div1-LoginRegistrer p {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.div2_LoginRegistrer {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.content-div2_LoginRegistrer {
+    width: 100%;
+    height: 80%;
+    padding: 0 100px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.content-div2_LoginRegistrer h3 {
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    margin: 20px 0;
+}
+
+.content-div2_LoginRegistrer input {
+    width: 100%;
+    background-color: black;
+}
+
+::placeholder {
+    font-size: 14px;
+}
+
+.content-div2_LoginRegistrer span {
+    color: rgb(179, 179, 179);
+    width: 100%;
+    text-align: center;
+}
+
+.container_icons-LoginRegistrer {
+    display: flex;
+    gap: 10px;
+}
+
+/*button style*/
+
+.forgot-pasword {
+    padding: 0;
+    color: rgb(179, 179, 179);
+    width: 100%;
+    text-align: end !important;
+    margin-bottom: 30px;
+}
+
+.exit-btn {
+    cursor: pointer;
+    background-color: rgb(63, 63, 63);
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+    font-size: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+.Btn-Login {
+    cursor: pointer;
+    background-color: red;
+    font-weight: bold;
+    padding: 10px 50px;
+}
+
+.icon_btn {
+    cursor: pointer;
+    border: 1px solid rgb(179, 179, 179);
+    border-radius: 50%;
+    font-weight: bold;
+    height: 2.5rem;
+    width: 2.5rem;
+    padding-bottom: 10px;
+}

@@ -8,7 +8,7 @@ body {
   word-wrap: break-word;
   color: #363636;
   background: #6e81cc;
-
+  min-height: 100vh;
 }
 
 #root {
@@ -16,6 +16,7 @@ body {
   background-image: url('https://www.teahub.io/photos/full/97-972894_free-download-game-pc-offline-windows-7.png');
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   background-repeat: no-repeat;
 }
 
@@ -42,6 +43,7 @@ h2,
 h3,
 h4,
 h5,
+a,
 p {
   color: white;
 }
@@ -76,6 +78,9 @@ input {
 
 }
 
+a{
+  text-decoration: none;
+}
 
 input[type='checkbox']:active,
 input[type='radio']:active,
